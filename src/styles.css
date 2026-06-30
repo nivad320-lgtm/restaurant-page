@@ -15,3 +15,20 @@ td {
 table {
     border-collapse: collapse;
 }
+
+.imgDiv {
+    display: flex;
+    align-items: center;
+}
+
+h1,
+h2,
+p,
+li {
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin-top: 16px;
+    text-align: center;
+}

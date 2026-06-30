@@ -32,6 +32,10 @@ const DisplayController = {
         const supinated = this.buildImg(supinatedImage, 'supinated-curl');
         const hammer = this.buildImg(hammerImage, 'hammer-curl')
 
+        const imgDiv = document.createElement('div');
+        imgDiv.setAttribute('class', 'imgDiv');
+        imgDiv.append(supinated, hammer);
+
         const para = this.buildText('The core difference comes down to wrist position, which shifts the mechanical load to entirely different muscles in your arms.', 'p')
         const supinatedTitle = this.buildText('Supinated Curl', 'h2');
         
@@ -64,8 +68,7 @@ const DisplayController = {
         const finalThoughAns = this.buildText(`Do both. They aren't mutually exclusive.`, 'p');
         contentContainer.append(
             title, 
-            supinated, 
-            hammer, 
+            imgDiv, 
             para,
             supinatedTitle,
             supinatedList,
