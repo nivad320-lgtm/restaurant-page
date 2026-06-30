@@ -45,7 +45,8 @@ li {
 }
 
 p,
-li {
+li,
+table {
     font-family: 'Rubik Pixels';
 }
 
